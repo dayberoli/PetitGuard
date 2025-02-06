@@ -16,3 +16,5 @@
 
     *head = cabeçalho do documento
     *header = cabeçalho visual
+
+4) Adicionar bilbiotecas, frameworks e tudo mais que venha de fora
