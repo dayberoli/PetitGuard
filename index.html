@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,135 @@
     <meta name="author" content="Joca da Silva">
     <meta name="keyword" content="cão, gato, pet, saúde, pelos, patas">
     <title>Pet Shop Guard</title>
+    <!-- Inclui o ícone de favoritos -->
     <link rel="shortcut icon" href="img/logopet.png">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Componentes do Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
+    <div id="wrap">
+        <header>
+            <a href="index.html">
+                <img src="img/logopet.png" alt="Logotipo de Petite Guarda">
+            </a>
+            <h1>Pet Shop Guard</h1>
+        </header>
 
-    <header>
-        <a href="index.html">
-        <img src="img/logopet.png" alt=" Logo Pet" width="200">   
-        </a>     
-        <h1> Pet Shop Guard </h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="cadastro.html">CADASTRO</a></li>
-                <li><a href="contatos.html">CONTATOS</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MENU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">CADASTRO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href= "contatos.html">CONTATOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">SOBRE</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="empresa.html">A EMPRESA</a></li>
+                                <li><a class="dropdown-item" href="site.html">O SITE</a></li>
+                                <li><a class="dropdown-item" href="privacidade.html">PRIVACIDADE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="procurar.html">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span class="show-sm">PROCURAR</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>
 
-    
+        <!-- <nav>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="cadastro.html">CADASTRO</a></li>
+                    <li><a href="contatos.html">CONTATOS</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="busca.html">BUSCA</a></li>
+                </ul>
+            </nav> -->
 
-    <main></main>
 
-    <footer>
-        <div id="andar1">andar1</div>
-        <div id="andar2">Coisa do andar 2</div>
-    </footer>
+        <main>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus odit in obcaecati eveniet
+                minima sint reiciendis! Maxime, iure sequi eum quasi nobis, facere doloribus deserunt mollitia
+                asperiorescorporis qui?
+            </article>
+            <aside>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
+            </aside>
+        </main>
 
+        <footer class="text-bg-dark">
+            <!-- Primeiro andar - Licensa -->
+            <div class="footer-andar-1 d-flex justify-content-between">
+                <!-- Acesso à página inicial -->
+                <a href="index.html" class="p-1">
+                    <i class="fa-solid fa-house fa-2x fa-fw"></i>
+                </a>
+                <!-- Licensa -->
+                <div class="flex-grow-1 text-center align-content-center">&copy; 2025 Petite Guarda</div>
+                <!-- Acesso ao topo da página -->
+                <a href="#wrap" class="p-1">
+                    <i class="fa-solid fa-circle-up fa-2x fa-fw"></i>
+                </a>
+            </div>
+            <!-- Segundo andar - Links -->
+            <div class="footer-andar-2 d-flex justify-content-around p-2">
+
+                <!-- Menu com nossas redes sociais -->
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="https://facebook.com/petiteguarda" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i> Facebook
+                            </a></li>
+                        <li><a href="https://instagram.com/petiteguarda" target="_blank">
+                                <i class="fa-brands fa-square-instagram"></i> Instagram
+                            </a></li>
+                        <li><a href="https://youtube.com/petiteguarda" target="_blank">
+                                <i class="fa-brands fa-square-youtube"></i> Youtube
+                            </a></li>
+                        <li><a href="https://ws.com/petiteguarda" target="_blank">
+                                <i class="fa-brands fa-square-whatsapp"></i> Whatsapp
+                            </a></li>
+                    </ul>
+                </nav>
+
+                <!-- Menu com links importantes -->
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="contatos.html">
+                                <i class="fa-solid fa-message"></i> Faça contato
+                            </a></li>
+                        <li><a href="sobre.html">
+                                <i class="fa-solid fa-circle-info"></i> Sobre
+                            </a></li>
+                        <li><a href="privacidade.html">
+                                <i class="fa-solid fa-lock"></i> Privacidade
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
