@@ -18,10 +18,27 @@ body,
     font-size: 16px;
 }
 
+input[type="prucurar.html"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    width: 300px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+  
+  /* Efeito ao focar no campo de pesquisa */
+  input[type="search"]:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+  }
+
 #wrap {}
 
 header {
-    background-color: rgb(56, 123, 224);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -29,12 +46,14 @@ header {
 
 header img {
     display: block;
-    width: 4rem;
+    width: 10rem;
+    margin: 10px;
     height: auto;
 }
 
 header h1 {
     flex-grow: 1;
+    display: none;
     margin: 0;
     margin-left: 1rem;
     -webkit-text-stroke: .5px rgb(255, 255, 255);
