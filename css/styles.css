@@ -21,7 +21,7 @@ body,
 #wrap {}
 
 header {
-    background-color: rgb(56, 123, 224);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -29,12 +29,14 @@ header {
 
 header img {
     display: block;
-    width: 4rem;
+    width: 10rem;
+    margin: 10px;
     height: auto;
 }
 
 header h1 {
     flex-grow: 1;
+    display: none;
     margin: 0;
     margin-left: 1rem;
     -webkit-text-stroke: .5px rgb(255, 255, 255);
@@ -48,11 +50,11 @@ header nav ul {
 
 
 .footer-andar-1 i {
-    color: rgb(38, 116, 218);   
+    color: #02A2FF;   
 }
 
 .footer-andar-1 i:hover {
-    color: rgb(38, 116, 218);   
+    color: #02A2FF;   
 }
 
 .footer-andar-2 ul a {
@@ -62,4 +64,8 @@ header nav ul {
 
 .footer-andar-2 ul {
     line-height: 2;
+}
+
+#search{
+    width: 100px;
 }

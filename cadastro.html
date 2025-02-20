@@ -67,21 +67,72 @@
                 </div>
             </div>
         </nav>
+        <main class="container flex-grow-1 d-flex">
+            <div class="row d-flex flex-grow-1">
+                <article class="col-12 col-md-9 flex-grow-1 p-3">
 
-        <main>
-            <article>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus odit in obcaecati eveniet
-                minima sint reiciendis! Maxime, iure sequi eum quasi nobis, facere doloribus deserunt mollitia
-                asperiorescorporis qui?
-            </article>
-            <aside>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
-            </aside>
+                    <h2>Cadastre seu Pet!</h2>
+
+                    <p>Preencha todos os campos para cadastrar o seu pet.</p>
+
+                    <form action="processa2.html" method="get" id="formContato">
+
+                        <p>
+                            <label for="campoNomePet">Nome do Pet:</label>
+                            <input type="text" name="nome" id="campoNomePet" placeholder="Nome do Pet" minlength="3" required>
+                        </p>
+                    
+                        <p>
+                            <label for="campoIdadePet">Idade:</label>
+                            <input type="number" name="idade" id="campoIdadePet" placeholder="Idade do Pet (em anos)" required>
+                        </p>
+                    
+                        <p>
+                            <label for="campoEspeciePet">Espécie:</label>
+                            <input type="text" name="especie" id="campoEspeciePet" placeholder="Espécie do Pet" minlength="3" required>
+                        </p>
+                    
+                        <p>
+                            <label for="campoRacaPet">Raça:</label>
+                            <input type="text" name="raca" id="campoRacaPet" placeholder="Raça do Pet" required>
+                        </p>
+                    
+                        <p>
+                            <label for="campoSexoPet">Sexo:</label>
+                            <select name="sexo" id="campoSexoPet" required>
+                                <option value="" disabled selected>Selecione o Sexo</option>
+                                <option value="M">Macho</option>
+                                <option value="F">Fêmea</option>
+                            </select>
+                        </p>
+                    
+                        <p>
+                            <label for="campoVacinasPet">Vacinas:</label>
+                            <textarea name="vacinas" id="campoVacinasPet" placeholder="Vacinas que o Pet recebeu" required></textarea>
+                        </p>
+                    
+                        <p>
+                            <label for="campoDoencasPet">Doenças Preexistentes:</label>
+                            <textarea name="doencas" id="campoDoencasPet" placeholder="Doenças ou condições médicas anteriores" required></textarea>
+                        </p>
+                    
+                        <p>
+                            <button type="submit">Cadastrar Pet</button>
+                        </p>
+
+                    </form>
+
+                </article>
+                <aside class="col-12 col-md-3 p-3">
+                    <h2>Aside</h2>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
+                </aside>
+            </div>
         </main>
 
         <footer class="text-bg-dark">
             <!-- Primeiro andar - Licensa -->
-            <div class="footer-andar-1 d-flex justify-content-between">
+            <div class="footer-andar-1 d-flex justify-content-between pt-1">
                 <!-- Acesso à página inicial -->
                 <a href="index.html" class="p-1">
                     <i class="fa-solid fa-house fa-2x fa-fw"></i>
@@ -94,7 +145,7 @@
                 </a>
             </div>
             <!-- Segundo andar - Links -->
-            <div class="footer-andar-2 d-flex justify-content-around p-2">
+            <div class="footer-andar-2 d-flex justify-content-around p-2 pt-4">
 
                 <!-- Menu com nossas redes sociais -->
                 <nav>
@@ -120,8 +171,11 @@
                         <li><a href="contatos.html">
                                 <i class="fa-solid fa-message"></i> Faça contato
                             </a></li>
+                        <li><a href="empresa.html">
+                                <i class="fa-solid fa-circle-info"></i> Sobre a empresa
+                            </a></li>
                         <li><a href="sobre.html">
-                                <i class="fa-solid fa-circle-info"></i> Sobre
+                                <i class="fa-solid fa-circle-info"></i> Sobre o site
                             </a></li>
                         <li><a href="privacidade.html">
                                 <i class="fa-solid fa-lock"></i> Privacidade
