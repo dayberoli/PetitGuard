@@ -18,23 +18,6 @@ body,
     font-size: 16px;
 }
 
-input[type="prucurar.html"] {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 30px;
-    width: 300px;
-    outline: none;
-    transition: all 0.3s ease;
-    background-color: #fff;
-  }
-  
-  /* Efeito ao focar no campo de pesquisa */
-  input[type="search"]:focus {
-    border-color: #6c63ff;
-    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
-  }
-
 #wrap {}
 
 header {
@@ -67,11 +50,11 @@ header nav ul {
 
 
 .footer-andar-1 i {
-    color: rgb(38, 116, 218);   
+    color: #02A2FF;   
 }
 
 .footer-andar-1 i:hover {
-    color: rgb(38, 116, 218);   
+    color: #02A2FF;   
 }
 
 .footer-andar-2 ul a {
@@ -81,4 +64,8 @@ header nav ul {
 
 .footer-andar-2 ul {
     line-height: 2;
+}
+
+#search{
+    width: 100px;
 }
