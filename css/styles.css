@@ -69,3 +69,7 @@ header nav ul {
 #search{
     width: 100px;
 }
+
+.dropbtn:hover {
+    color: aqua;
+}
